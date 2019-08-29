@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="43dp"
+        android:text="Students Details"
+       android:layout_gravity="center"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter RollNo :" />
+
+        <EditText
+            android:id="@+id/editRollno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Enter Rollno" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Name :"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter Name"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Marks:" />
+
+        <EditText
+            android:id="@+id/editMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter Marks" />
+    </GridLayout>
+       <TableLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <TableRow>
+
+               <Button
+                   android:id="@+id/Add"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Add" />
+
+               <Button
+                   android:id="@+id/Delete"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Delete" />
+
+
+               <Button
+                   android:id="@+id/Modify"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Modify" />
+           </TableRow>
+           <TableRow>
+
+               <Button
+                   android:id="@+id/View"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="View" />
+
+               <Button
+                   android:id="@+id/Viewall"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ViewAll" />
+
+               <Button
+                   android:id="@+id/Show"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Show" />
+           </TableRow>
+       </TableLayout>
+</LinearLayout>
